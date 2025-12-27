@@ -1,17 +1,14 @@
-let num = 345;
+let num = 3454;
 
 function countDigit(n){
-    if(n === 0) return;
-    
-    n = Math.abs(n);
-
-    let count = 0;
-
-    while(n > 0){
-        n = Math.floor(n /10);
-        count++;
-    }
-    return count;
+   if(n === 0) return;
+   let count = 0;
+   n = Math.abs(n);
+   while(n > 0){
+    n = Math.floor(n / 10);
+    count++;
+   }
+   return count;
 }
 
 const result = countDigit(num);
