@@ -29,11 +29,8 @@ const reverse = (x) => {
     x = Math.abs(x)
     while(x > 0){
         rem = x % 10;
-        console.log("rem = ", rem)
         rev = (10 * rev) + rem;
-        console.log("rev = ", rev)
         x = Math.floor(x / 10);
-        console.log("x = ", x)
     }
     let limit = Math.pow(2, 31)
     if(rev < -limit || rev > limit) return 0;
